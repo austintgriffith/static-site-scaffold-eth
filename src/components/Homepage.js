@@ -46,7 +46,7 @@ const Homepage = ({ children }) => {
               <a
                 href="https://github.com/austintgriffith/scaffold-eth"
                 target="blank"
-                className="w-full block md:w-auto md:inline-block mb-6 bg-transparent hover:bg-purple-600 text-gray-300 font-semibold py-3 px-6 md:mx-2 border border-gray-300 hover:border-transparent rounded focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                className="w-full block md:w-auto md:inline-block mb-6 bg-transparent hover:bg-purple-600 text-gray-300 hover:text-white font-semibold py-3 px-6 md:mx-2 border border-gray-300 hover:border-transparent rounded focus:outline-none focus:shadow-outline transition duration-150 ease-in-out hover:no-underline"
               >
                 Visit On GitHub
               </a>
