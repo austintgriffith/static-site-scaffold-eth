@@ -34,7 +34,7 @@ const Homepage = ({ children }) => {
     <MDXProvider components={components}>
       <div className="antialiased">
         <SEO title="Scaffold ETH" />
-        <Hero className="px-6 pt-12 pb-48">
+        <Hero className="px-6 pt-12 pb-20 md:pb-48">
           <div className="md:mt-6 lg:mt-12 text-center text-white">
             <h1 className="text-4xl leading-10 font-bold sm:text-5xl sm:leading-none md:text-6xl">
               🏗 Scaffold ETH
@@ -77,7 +77,10 @@ const Homepage = ({ children }) => {
           </HeroSvg>
         </Hero>
 
-        <div className="container mx-auto mt-12 mb-12 sm:mt-16 md:mt-32 px-6 sm:px-6 lg:px-8">
+        <div
+          className="max-w-screen-md relative bg-white mx-auto mb-12 -mt-12 md:-mt-32 p-6 md:p-8 rounded-lg border border-gray-300"
+          style={{ zIndex: 1 }}
+        >
           {children}
         </div>
 

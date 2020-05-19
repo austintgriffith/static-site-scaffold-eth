@@ -2,8 +2,6 @@ import Homepage from '../components/Homepage';
 
 <Homepage>
 
-# 🏗 scaffold-eth
-
 > TL;DR: **fork this repo** for an Ethereum dev stack focused on _fast product iteration_
 
 > 🧫 [first draft] research is [available here](https://medium.com/@austin_48503/building-on-ethereum-in-2020-dca52eda5f00)
@@ -251,7 +249,7 @@ Your commonly used React Ethereum components located in `packages/react-app/src/
 
 📬 `<Address />`: A simple display for an Ethereum address that uses a [Blockie](https://www.npmjs.com/package/ethereum-blockies), lets you copy, and links to [Etherescan](https://etherscan.io/).
 
-```js
+```jsx
   <Address value={address} />
   <Address value={address} size="short" />
   <Address value={address} size="long" blockexplorer="https://blockscout.com/poa/xdai/address/"/>
@@ -264,7 +262,7 @@ Your commonly used React Ethereum components located in `packages/react-app/src/
 
 🖋 `<AddressInput />`: An input box you control with useState for an Ethereum address that uses a [Blockie](https://www.npmjs.com/package/ethereum-blockies) and ENS lookup/display.
 
-```js
+```jsx
   const [ address, setAddress ] = useState("")
   <AddressInput
     value={address}
@@ -281,7 +279,7 @@ TODO GIF
 
 💵 `<Balance />`: Displays the balance of an address in either dollars or decimal.
 
-```js
+```jsx
 <Balance address={address} provider={injectedProvider} dollarMultiplier={price} />
 ```
 
@@ -293,13 +291,13 @@ TODO GIF
 
 👤 `<Account />`: Allows your users to start with an Ethereum address on page load but upgrade to a more secure, injected provider, using [Web3Modal](https://web3modal.com/). It will track your `address` and `localProvider` in your app's state:
 
-```js
+```jsx
 const [address, setAddress] = useState();
 const [injectedProvider, setInjectedProvider] = useState();
 const price = useExchangePrice(mainnetProvider);
 ```
 
-```js
+```jsx
 <Account
   address={address}
   setAddress={setAddress}
@@ -322,7 +320,7 @@ const price = useExchangePrice(mainnetProvider);
 
 📡 `<Provider />`: You can choose to display the provider connection status to your users with:
 
-```js
+```jsx
 <Provider name={"mainnet"} provider={mainnetProvider} />
 <Provider name={"local"} provider={localProvider} />
 <Provider name={"injected"} provider={injectedProvider} />
