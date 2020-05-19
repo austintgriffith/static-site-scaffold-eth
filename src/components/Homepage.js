@@ -78,7 +78,7 @@ const Homepage = ({ children }) => {
         </Hero>
 
         <div
-          className="max-w-screen-md relative bg-white mx-auto mb-12 -mt-12 md:-mt-32 p-6 md:p-8 rounded-lg border border-gray-300"
+          className="markdown-body max-w-screen-md relative bg-white mx-auto mb-12 -mt-12 md:-mt-32 p-6 md:p-8 rounded-lg border border-gray-300"
           style={{ zIndex: 1 }}
         >
           {children}
