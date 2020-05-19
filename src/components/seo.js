@@ -42,7 +42,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:title`,
-          content: title
+          content: title || site.siteMetadata.title
         },
         {
           property: `og:description`,
@@ -53,8 +53,12 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`
         },
         {
+          property: `og:image`,
+          content: `https://scaffoldeth.io/scaffold-eth-og.jpg`
+        },
+        {
           name: `twitter:card`,
-          content: `summary`
+          content: `summary_large_image`
         },
         {
           name: `twitter:creator`,
@@ -62,11 +66,15 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:title`,
-          content: title
+          content: title || site.siteMetadata.title
         },
         {
           name: `twitter:description`,
           content: metaDescription
+        },
+        {
+          name: `twitter:image`,
+          content: `https://scaffoldeth.io/scaffold-eth-og.jpg`
         }
       ].concat(meta)}
     />
