@@ -6,6 +6,7 @@ import SEO from './seo';
 
 const Hero = styled.div`
   position: relative;
+  overflow: hidden;
   background: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(26, 20, 74, 1) 0%,
