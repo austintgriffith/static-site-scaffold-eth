@@ -34,7 +34,7 @@ const Homepage = ({ children }) => {
   return (
     <MDXProvider components={components}>
       <div className="antialiased">
-        <SEO title="Scaffold ETH" />
+        <SEO title="Scaffold ETH - Build a Decentralized Ethereum Application" />
         <Hero className="px-6 pt-12 pb-20 md:pb-48">
           <div className="md:mt-6 lg:mt-12 text-center text-white">
             <h1 className="text-4xl leading-10 font-bold sm:text-5xl sm:leading-none md:text-6xl">

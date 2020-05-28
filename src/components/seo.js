@@ -54,7 +54,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: `https://scaffoldeth.io/scaffold-eth-og.jpg`
+          content: `http://scaffoldeth.io/scaffold-eth-og.jpg`
         },
         {
           name: `twitter:card`,
@@ -74,7 +74,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: `https://scaffoldeth.io/scaffold-eth-og.jpg`
+          content: `http://scaffoldeth.io/scaffold-eth-og.jpg`
         }
       ].concat(meta)}
     />
